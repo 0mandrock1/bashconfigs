@@ -1,1 +1,1 @@
-alias sshconfig='nano ~/.ssh/config'
+ alias sshconfig='nano ~/.ssh/config'
