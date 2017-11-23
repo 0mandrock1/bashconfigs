@@ -1,1 +1,5 @@
- alias sshconfig='nano ~/.ssh/config'
+alias sshconfig='nano ~/.ssh/config'
+alias aptupdate='sudo apt update'
+alias aptupgrade='sudo apt upgrade -y'
+alias aptup='sudo apt update&&sudo apt upgrade -y'
+alias aptremove='sudo apt autoremove -y'
