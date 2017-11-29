@@ -1,0 +1,17 @@
+#function to {
+#getopts 'd:' opt;
+#if $OPTARG 'profile'
+#way='/home/markm/$1';    
+# case $1 in
+# profile)  way="$way.bash_profile" ;;
+# rc) way="$way.bashrc" ;;
+# esac
+# echo "$2" >> $way ;
+# while getopts "se" opt
+# do
+# case $opt in
+# s) source $way ;;
+# e) exit;;
+# esac
+# done
+#}

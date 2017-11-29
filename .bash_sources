@@ -5,3 +5,8 @@ source ~/.config/bashconfigs/.bash_functions
 #for f in ~/.config/.bash_*; do
 #   source $f
 #done
+
+
+export BASHCONFIGS_PATH=/home/$USER/.config/bashconfigs
+export BASHCONFIGS_SCRIPTS=$BASHCONFIGS_PATH/scripts
+PATH=$PATH:$BASHCONFIGS_SCRIPTS
