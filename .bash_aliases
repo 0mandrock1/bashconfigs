@@ -1,4 +1,6 @@
-alias sshconfig='nano ~/.ssh/config'
+
+alias bashconfigure='code ~/.config/bashconfigs'
+alias bashconfigs='cd ~/.config/bashconfigs'
 alias aptupdate='sudo apt update'
 alias aptupgrade='sudo apt upgrade -y'
 alias aptup='sudo apt update&&sudo apt upgrade -y'

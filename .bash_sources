@@ -1,1 +1,4 @@
 source /home/mandrock/.config/wp-cli/wp-completion.bash
+for f in /home/mandrock/.config/.bash_*; do
+   source $f
+done
