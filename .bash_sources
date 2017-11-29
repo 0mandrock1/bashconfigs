@@ -7,6 +7,6 @@ source ~/.config/bashconfigs/.bash_functions
 #done
 
 
-export BASHCONFIGS_PATH=/home/$USER/.config/bashconfigs
-export BASHCONFIGS_SCRIPTS=$BASHCONFIGS_PATH/scripts
+export BASHCONFIGS=/home/$USER/.config/bashconfigs
+export BASHCONFIGS_SCRIPTS=$BASHCONFIGS/scripts
 PATH=$PATH:$BASHCONFIGS_SCRIPTS

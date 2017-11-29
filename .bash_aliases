@@ -21,3 +21,7 @@ alias sites='cd /home/markm/vagrant-web-server/sites/'
 alias yoreevolive_deploy='rsync -zavP ~/vagrant-web-server/sites/yoreevo.vagrant.devtestnet.com_web29/web/wp-content/themes/yoreevo/assets/ u90908181@home703468421.1and1-data.host:~/repo/wp-content/themes/yoreevo/assets/'
 
 
+#git helpers
+function gcommit { git commit -m "'$1'"; }
+alias gstatus='git status'
+export -f gcommit

@@ -1,3 +1,3 @@
 #!/bin/sh
-cd $BASHCONFIGS_PATH
+cd $HOME/.config/bashconfigs
 git pull && git push
