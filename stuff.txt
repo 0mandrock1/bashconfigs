@@ -15,3 +15,11 @@
 # esac
 # done
 #}
+
+if ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST'] ) ) {
+    $_SERVER['HTTP_HOST'] = 'uilib.vagrant.devtestnet.com';
+}
+
+define('WP_HOME', 'http://'.$_SERVER['HTTP_HOST']);
+define('WP_SITEURL', 'http://'.$_SERVER['HTTP_HOST']);
+define( 'WP_DEBUG', true );

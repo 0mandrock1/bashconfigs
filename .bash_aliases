@@ -24,4 +24,4 @@ alias yoreevolive_deploy='rsync -zavP ~/vagrant-web-server/sites/yoreevo.vagrant
 #git helpers
 function gcommit { git commit -m "'$1'"; }
 alias gstatus='git status'
-export -f gcommit
+export -f gcommitif ( defined( 'WP_CLI' ) && WP_CLI && ! isset( $_SERVER['HTTP_HOST'] ) ) {
