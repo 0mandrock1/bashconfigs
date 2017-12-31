@@ -7,11 +7,10 @@ source ~/.config/wp-cli/wp-completion.bash
 export PS1="\\w\$(__git_ps1 '(%s)') \$ "
 
 #git helpers
-function gcommit { git commit -m "'$1'"; }
+function gcommit() { git commit -m "'$1'"; }
 alias gstatus='git status'
 
 export -f gcommit
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 . /home/markm/.config/rails/completion-ruby-all
-    

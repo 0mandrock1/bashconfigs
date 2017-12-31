@@ -1,0 +1,13 @@
+{
+    "editor.rulers": [
+        80
+    ],
+    "shellformat.path": "/home/mandrock/Apps/bin/shfmt",
+    "shellformat.flag": "-i 2 -s ",
+    "files.associations": {
+        ".bash_sources": "shellscript",
+        ".bash_profile": "shellscript"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+}

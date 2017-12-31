@@ -5,10 +5,10 @@ sudo apt update
 sudo apt upgrade
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-wget -O - https://swupdate.openvpn.net/repos/repo-public.gpg|apt-key add -
+wget -O - https://swupdate.openvpn.net/repos/repo-public.gpg | apt-key add -
 
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-echo "deb http://build.openvpn.net/debian/openvpn/2.4 xenial main" > /etc/apt/sources.list.d/openvpn-aptrepo.list
+echo "deb http://build.openvpn.net/debian/openvpn/2.4 xenial main" >/etc/apt/sources.list.d/openvpn-aptrepo.list
 
 sudo apt update
 

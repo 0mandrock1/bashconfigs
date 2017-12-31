@@ -1,12 +1,10 @@
-source ~/.config/wp-cli/wp-completion.bash
-source ~/.config/bashconfigs/.bash_aliases
-source ~/.config/bashconfigs/.bash_functions
+export AppsBin=$HOME/Apps/bin
 
-#for f in ~/.config/.bash_*; do
-#   source $f
-#done
+export configpath=$HOME/.config
+export bashconfigs=$configpath/bashconfigs
 
+for module in $bashconfigs/modules/*; do source $module; done
+eval "$(declare -F | sed -e 's/-f /-fx /')"
+source $configpath/wp-cli/wp-completion.bash
 
-export BASHCONFIGS=/home/$USER/.config/bashconfigs
-export BASHCONFIGS_SCRIPTS=$BASHCONFIGS/scripts
-PATH=$PATH:$BASHCONFIGS_SCRIPTS
+PATH=$PATH:$bashconfigs/scripts:$AppsBin
