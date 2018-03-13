@@ -4,7 +4,8 @@ export configpath=$HOME/.config
 export bashconfigs=$configpath/bashconfigs
 
 for module in $bashconfigs/modules/*; do source $module; done
-eval "$(declare -F | sed -e 's/-f /-fx /')"
-source $configpath/wp-cli/wp-completion.bash
+# eval "$(declare -F | sed -e 's/-f /-fx /')"
+
+source $bashconfigs/extras/wp-completion.bash
 
 PATH=$PATH:$bashconfigs/scripts:$AppsBin

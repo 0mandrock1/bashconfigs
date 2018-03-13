@@ -1,24 +1,19 @@
 #!/bin/bash
+
+#execute with sudo(if pass equals "space")
 sudos() {
     echo " " | sudo -S $1;
 }
 
-csf() {
-    cd "/home/$USER/vagrant-web-server/sites"
-    ls
-    echo "Site:"
-    read -e cdname
-    cd "/home/$USER/vagrant-web-server/sites/$cdname/web"
-}
-
+#добавляет текст к файлу, находящемуся по $1
 echoin() {
-    path=$2
-    input=$1
+    path=$1
+    read input
     echo $input >>$path
 }
 
+#marks file as executable
 chmodx() {
     chmod a+x $1
 }
 
-#функция для симлинков+регексп для имени папки до точки

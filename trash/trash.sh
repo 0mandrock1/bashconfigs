@@ -26,3 +26,5 @@ define( 'WP_DEBUG', true );
 
 #модификация ls
 #ls | sed -r "$(find -maxdepth 1 -type d | cut -d/ -f2 | sed "1 d; 2~1 { s:.*:s/^\\(&\\)$/[+]\\\\1/;:g}")"
+
+# alias blankwp='sudo rm -rf web&&git clone git@gitlab.com:0mandrock1/wp-blank.git web'
