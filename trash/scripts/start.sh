@@ -18,3 +18,7 @@ lsak(){
     /:$/&&!f{sub(/:$/,"");s=$0;f=1;next}
     NF&&f{ print s"/"$0 }'
 }
+
+#sudo add-apt-repository ppa:ondrej/php
+# sudo apt-get install php5.6
+# sudo apt-get install php5.6-mbstring php5.6-mcrypt php5.6-mysql php5.6-xmls
