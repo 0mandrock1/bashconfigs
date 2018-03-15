@@ -3,6 +3,7 @@ export AppsBin=$HOME/Apps/bin
 export configpath=$HOME/.config
 export bashconfigs=$configpath/bashconfigs
 export bashscripts=$bashconfigs/scripts
+export bashmodules=$bashconfigs/modules
 
 for module in $bashconfigs/modules/*; do source $module; done
 # eval "$(declare -F | sed -e 's/-f /-fx /')"
